@@ -1,0 +1,10 @@
+{
+  "name": "crdt-couchdb",
+  "version": "0.0.0",
+  "author": "Maciej Małecki <me@mmalecki.com>",
+  "main": "./lib/crdt-couchdb.js",
+  "dependencies": {
+    "changes": "1.1.x",
+    "crdt": "3.5.x"
+  }
+}
