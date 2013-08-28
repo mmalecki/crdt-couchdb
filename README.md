@@ -18,7 +18,7 @@ doc = new CouchDBDoc({
   view: 'app/app',      // View you want to pre-fetch from (optional)
   filter: 'app/app',    // Filter you want to use for `_changes` feed (optional)
   map: function (doc) { // Map function (optional)
-    emit(doc.subdomain, { host: doc.host });
+    emit(doc.doc.subdomain, { host: doc.doc.host });
   }
 });
 docStream = doc.createStream();
